@@ -6,3 +6,50 @@ $accent-color:         #448AFF;
 $primary-text-color:   #212121;
 $secondary-text-color: #757575;
 $divider-color:        #BDBDBD;
+
+html {
+   font-size: 16px;
+}
+body {
+   font-size: 16px;
+}
+.container {
+   //Главный контейнер сайта
+   display: grid;
+   grid-template-columns: 23% auto 23%;//270px 630px 270px
+   grid-template-rows: auto;
+   grid-template-areas: "header header header"
+                        "left-sidebar content right-sidabar"
+                        "footer footer footer";
+   max-width: 1170px;
+   margin: 0 auto;
+}
+.header {
+   //Шапка сайта
+   grid-area: header;
+   border: red 1px solid;
+
+}
+.left-sidebar {
+   //Левое меню
+   grid-area: left-sidebar;
+   border: red 1px solid;
+
+}
+.content {
+   //Содержимое сайта
+   grid-area: content;
+   border: red 1px solid;
+}
+.right-sidabar {
+   //Правое меню
+   grid-area: right-sidabar;
+   border: red 1px solid;
+
+}
+.footer {
+   //Подвал сайта
+   grid-area: footer;
+   border: red 1px solid;
+
+}
