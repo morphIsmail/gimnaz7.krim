@@ -6,6 +6,7 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  background-color: #C5CAE9;
 }
 
 .container {
@@ -100,5 +101,13 @@ body {
   padding: 2rem 0;
   -webkit-box-shadow: 0.13em 0.13em 0.08em 0.08em #212121;
           box-shadow: 0.13em 0.13em 0.08em 0.08em #212121;
+}
+
+@media (max-width: 768px) {
+  .container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+        grid-template-areas: "header" "left-sidebar" "content " "right-sidabar" "footer";
+  }
 }
 /*# sourceMappingURL=main.css.map */

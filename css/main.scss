@@ -5,7 +5,7 @@ $primary-color-text:   #FFFFFF;
 $accent-color:         #448AFF;
 $primary-text-color:   #212121;
 $secondary-text-color: #757575;
-$divider-color:        #BDBDBD;
+$divider-color:        #C5CAE9;
 
 html {
    font-family: 'Roboto', sans-serif;
@@ -14,6 +14,7 @@ html {
 body {
    font-family: 'Roboto', sans-serif;
    font-size: 16px;
+   background-color: $divider-color;
 }
 .container {
    //Главный контейнер сайта
@@ -91,3 +92,5 @@ body {
    padding: 2rem 0;
    box-shadow: 0.13em 0.13em 0.08em 0.08em $primary-text-color;
 }
+
+@import "media";
