@@ -29,13 +29,16 @@
       .menu {
          display: none;
          flex-direction: column;
+         background-color: $primary-color-text;
          height: auto;
          padding: 0;
-         &-item {  
+         &-item { 
             width: 100%;
             a {
-               color: $primary-color-text;
+               font-weight: bold;
+               color: $primary-text-color;
                &:hover {
+                  color: $primary-color-text;
                   background-color: $accent-color;
                }
             }
