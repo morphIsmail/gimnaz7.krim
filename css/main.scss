@@ -68,15 +68,15 @@ h1,h2,h3,h4,h5,h6 {
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: $primary-color-dark; 
+      background-color: $primary-color; 
       height: 50px;
       margin: 0;
       list-style: none;
-      &-item {  
+      &-item {
          a {
             display: flex;
             height: 50px;
-            padding: 0 20px;
+            padding: 0 2rem;
             align-items: center;
             color: $primary-color-text;
             text-decoration: none;
@@ -88,22 +88,47 @@ h1,h2,h3,h4,h5,h6 {
       }
    }
 }
+h4 {
+   padding: 1rem;
+   text-align: center;
+   background-color: $primary-color;
+   color: $primary-color-text;
+}
+.sidebar {
+   padding: 0;
+   margin: 0;
+   li {
+      list-style: none;
+      transition: all 0.1s;
+      a {
+         display: flex;
+         align-items: center;
+         height: 30px;
+         padding: 1rem 2rem;
+         text-decoration: none;
+         color: $primary-text-color;
+         &:hover {
+            color: $primary-color-text;
+         }
+      }
+      &:hover {
+         background-color: $accent-color; 
+      }
+   }
+}
 
 .left-sidebar {
    //Левое меню
    grid-area: left-sidebar;
    background-color: $primary-color-text;
-   padding: 2rem;
-   min-height: 400px;
    box-shadow: 0.13em 0.13em 0.08em 0.08em rgba($primary-text-color, 0.8);
 
 }
 .content {
    //Содержимое сайта
    grid-area: content;
-   background-color: $primary-color-text;
    padding: 2rem;
-   min-height: 400px;
+   background-color: $primary-color-text;
    box-shadow: 0.13em 0.13em 0.08em 0.08em rgba($primary-text-color, 0.8);
    img {
       width: 100%;
@@ -113,15 +138,12 @@ h1,h2,h3,h4,h5,h6 {
    //Правое меню
    grid-area: right-sidabar;
    background-color: $primary-color-text;
-   padding: 2rem;
-   min-height: 400px;
    box-shadow: 0.13em 0.13em 0.08em 0.08em rgba($primary-text-color, 0.8);
-
 }
 .footer {
    //Подвал сайта
    grid-area: footer;
-   background-color: $primary-color-dark;
+   background-color: $primary-color;
    font-size: 1em;
    text-align: center;
    color: $primary-color-text;
