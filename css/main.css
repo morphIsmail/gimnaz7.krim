@@ -71,6 +71,21 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1em;
 }
 
+.menu-area .icon {
+  display: none;
+  background-color: #3F51B5;
+  height: 50px;
+  text-align: right;
+}
+
+.menu-area .icon span {
+  display: inline-block;
+  padding: 0 1rem;
+  height: 50px;
+  font-size: 2.3em;
+  cursor: pointer;
+}
+
 .menu-area .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,7 +223,11 @@ h4 {
         grid-template-columns: auto;
         grid-template-areas: "header" "menu" "left-sidebar" "content" "right-sidabar" "footer";
   }
+  .menu-area .icon {
+    display: block;
+  }
   .menu-area .menu {
+    display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

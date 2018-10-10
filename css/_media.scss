@@ -1,5 +1,4 @@
 @media (max-width: 868px) {
-   //Планшеты
    .container {
       grid-template-columns: auto;
       grid-template-areas: "header header"
@@ -24,7 +23,11 @@
                            "footer";
    }
    .menu-area {
+      .icon {
+         display: block;
+      }
       .menu {
+         display: none;
          flex-direction: column;
          height: auto;
          padding: 0;
